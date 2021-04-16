@@ -1,13 +1,104 @@
 {
-  "Post": {
-    "title": "string",
-    "views": "int",
-    "published": "boolean",
-    "createdAt": "date",
-    "comments": "Comment[]"
+  "Areas": {
+    "areas": [
+      {
+        "id": "int",
+        "name": "string",
+        "parent_id": "int",
+        "is_all": "boolean",
+        "order": "int",
+        "created_at": "date",
+        "updated_at": "date",
+        "deleted_at": "date",
+        "subareas": [
+          {
+            "id": "int",
+            "name": "string"
+          }
+        ]
+      }
+    ]
   },
-  "Comment": {
-    "body": "string",
-    "post": "Post"
+  "License-Types": {
+    "license_types": [
+      {
+        "id": "int",
+        "name": "string",
+        "order": "int",
+        "created_at": "date",
+        "updated_at": "date",
+        "deleted_at": "date"
+      }
+    ]
+  },
+  "Project-Types": {
+    "project_types": [
+      {
+        "id": "int",
+        "name": "string",
+        "parent_id": "int",
+        "order": "int",
+        "category": "string",
+        "created_at": "date",
+        "updated_at": "date",
+        "deleted_at": "date",
+        "subprojecttypes": [
+          {
+            "id": "int",
+            "name": "string"
+          }
+        ]
+      }
+    ]
+  },
+  "Project-Type-Categories": {
+    "categories": ["string"]
+  },
+  "Services": {
+    "services": [
+      {
+        "id": "int",
+        "name": "string",
+        "order": "int",
+        "created_at": "date",
+        "updated_at": "date",
+        "deleted_at": "date"
+      }
+    ]
+  },
+  "Specialities": {
+    "specialities": [
+      {
+        "id": "int",
+        "name": "string",
+        "order": "int",
+        "created_at": "date",
+        "updated_at": "date",
+        "deleted_at": "date"
+      }
+    ]
+  },
+  "Work-Types": {
+    "work_types": [
+      {
+        "id": "int",
+        "name": "string",
+        "parent_id": "int",
+        "order": "int",
+        "category": "string",
+        "created_at": "date",
+        "updated_at": "date",
+        "deleted_at": "date",
+        "subworktypes": [
+          {
+            "id": "int",
+            "name": "string"
+          }
+        ]
+      }
+    ]
+  },
+  "Work-Type-Categories": {
+    "categories": ["string"]
   }
 }
