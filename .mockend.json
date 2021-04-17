@@ -1,14 +1,88 @@
-
 {
-  "Post": {
-    "title": "string",
-    "views": "int",
-    "published": "boolean",
-    "createdAt": "date",
-    "comments": "Comment[]"
-  },
-  "Comment": {
-    "body": "string",
-    "post": "Post"
-  }
+  "Areas": [
+    {
+      "id": "int",
+      "name": "string",
+      "parent_id": "int",
+      "is_all": "boolean",
+      "order": "int",
+      "created_at": "date",
+      "updated_at": "date",
+      "deleted_at": "date",
+      "subareas": [
+        {
+          "id": "int",
+          "name": "string"
+        }
+      ]
+    }
+  ],
+  "License-Types": [
+    {
+      "id": "int",
+      "name": "string",
+      "order": "int",
+      "created_at": "date",
+      "updated_at": "date",
+      "deleted_at": "date"
+    }
+  ],
+  "Project-Types": [
+    {
+      "id": "int",
+      "name": "string",
+      "parent_id": "int",
+      "order": "int",
+      "category": "string",
+      "created_at": "date",
+      "updated_at": "date",
+      "deleted_at": "date",
+      "subprojecttypes": [
+        {
+          "id": "int",
+          "name": "string"
+        }
+      ]
+    }
+  ],
+  "Project-Type-Categories": ["string"],
+  "Services": [
+    {
+      "id": "int",
+      "name": "string",
+      "order": "int",
+      "created_at": "date",
+      "updated_at": "date",
+      "deleted_at": "date"
+    }
+  ],
+  "Specialities": [
+    {
+      "id": "int",
+      "name": "string",
+      "order": "int",
+      "created_at": "date",
+      "updated_at": "date",
+      "deleted_at": "date"
+    }
+  ],
+  "Work-Types": [
+    {
+      "id": "int",
+      "name": "string",
+      "parent_id": "int",
+      "order": "int",
+      "category": "string",
+      "created_at": "date",
+      "updated_at": "date",
+      "deleted_at": "date",
+      "subworktypes": [
+        {
+          "id": "int",
+          "name": "string"
+        }
+      ]
+    }
+  ],
+  "Work-Type-Categories": ["string"]
 }
