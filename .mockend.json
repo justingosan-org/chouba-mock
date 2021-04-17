@@ -1,22 +1,14 @@
+
 {
-  "Areas": {
-    "areas": [
-      {
-        "id": "int",
-        "name": "string",
-        "parent_id": "int",
-        "is_all": "boolean",
-        "order": "int",
-        "created_at": "date",
-        "updated_at": "date",
-        "deleted_at": "date",
-        "subareas": [
-          {
-            "id": "int",
-            "name": "string"
-          }
-        ]
-      }
-    ]
+  "Post": {
+    "title": "string",
+    "views": "int",
+    "published": "boolean",
+    "createdAt": "date",
+    "comments": "Comment[]"
+  },
+  "Comment": {
+    "body": "string",
+    "post": "Post"
   }
 }
